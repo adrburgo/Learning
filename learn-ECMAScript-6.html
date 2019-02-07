@@ -129,17 +129,26 @@
 
       // console.log(hei, msg, hei+msg, id);
 
+      //New arguments for functions
       function showargs()
       {
-        var mystring;
-
         for ( let value of arguments )
         {
           console.log(value);
         }
       }
 
-      showargs( 1, "b", "c");
+      //New arg Rest (...args)
+      function showargs2(...args)
+      {
+        for ( let value of args )
+        {
+          console.log(value);
+        }
+      }
+
+      showargs( "1", "b", "s");
+      showargs2( "1", "b", "s");
 
     }
   </script>
