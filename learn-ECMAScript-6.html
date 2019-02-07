@@ -120,14 +120,26 @@
       // console.log(num2);
 
       //Destructuring objects
-      let myobjvar = {a: 200, b:"Hello"};
-      let {a,b} = myobjvar;
+      // let myobjvar = {a: 200, b:"Hello"};
+      // let {a,b} = myobjvar;
 
-      console.log(a, b, a+b);
+      // console.log(a, b, a+b);
 
-      let {a:hei, b:msg, i:id=20} = myobjvar;
+      // let {a:hei, b:msg, i:id=20} = myobjvar;
 
-      console.log(hei, msg, hei+msg, id);
+      // console.log(hei, msg, hei+msg, id);
+
+      function showargs()
+      {
+        var mystring;
+
+        for ( value of arguments )
+        {
+          console.log(value, value.indexOf(arguments));
+        }
+      }
+
+      showargs("a", "b");
 
     }
   </script>
